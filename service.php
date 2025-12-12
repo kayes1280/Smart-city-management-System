@@ -1,5 +1,5 @@
 <?php
-$conn = new mysqli("localhost", "root", "", "complaint_system");
+$conn = new mysqli("localhost", "root", "", "signup");
 
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);

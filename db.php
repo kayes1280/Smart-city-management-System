@@ -2,7 +2,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "complaint_system"; // Using the same DB as found in kayes/db.php
+$dbname = "signup"; // Using the same DB as found in kayes/db.php
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
