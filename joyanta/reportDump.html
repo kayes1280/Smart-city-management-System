@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Report Dumping</title>
+  <style>
+    body { font-family: Arial; background: #f5f9f6; margin:0; }
+    header { background:#2d6a4f; color:white; text-align:center; padding:20px; }
+    .container { max-width:700px; margin:auto; padding:30px; }
+    input, textarea { width:100%; padding:12px; margin:10px 0; border:1px solid #ccc; border-radius:6px; }
+    button { background:#2d6a4f; color:white; padding:12px; border:none; border-radius:6px; cursor:pointer; }
+    button:hover { background:#40916c; }
+    footer { text-align: center; padding: 15px; background: #2d6a4f; color: white; margin-top: 30px; }
+  </style>
+</head>
+<body>
+<header>
+  <h1>Report Illegal Dumping</h1>
+  <nav><a href="waste.html" style="color:white;">⬅️ Back</a></nav>
+</header>
+<div class="container">
+  <h2>🚨 Submit a Report</h2>
+
+  <form action="DumpSubmit.php" method="POST" enctype="multipart/form-data">
+
+    <input type="text" id="dumpName" name="dumpName" placeholder="Your Name">
+    <span id="inputNaError"></span>
+
+    <input type="text" id="inputLoca" name="dumpLoca" placeholder="Location">
+    <span id="inputLocation"></span>
+
+    <input type="file" id="file" name="file">
+    <span id="inputFile"></span>
+
+    <textarea rows="4" id="dumpDesc" name="dumpDesc" placeholder="Describe the issue..."></textarea>
+    <span id="dumpDesc"></span>
+
+    <button type="submit" id="Dumpsubmit" name="Dumpsubmit">Submit Report</button>
+  </form>
+</div>
+<footer>© 2025 Smart City Portal</footer>
+<script src="reportDump.js"></script>
+</body>
+</html>

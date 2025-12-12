@@ -1,0 +1,88 @@
+body{
+    font-family: "poppins", sans-serif;
+    margin: 0;
+    background: #f5f7fb;
+    color: #333;
+}
+header{
+    background: linear-gradient(90deg, #1E88E5,#1565C0);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+}
+header h1{
+    margin: 0;
+    font-size: 24px;
+    font-weight: 600;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 500;
+}
+nav a:hover{
+    text-decoration: underline;
+}
+/* -----------container part-------- */
+.container{
+    max-width: 700px;
+    margin: 50px auto;
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+.container h2{
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 26px;
+    color: #1E88E5;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+input, select, textarea{
+    padding: 14px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+    outline: none;
+    transition: all o.3s;
+}
+input:focus,select:focus,textarea:focus{
+    border-color: #1E88E5;
+    box-shadow: 0 0 6px rgba(30,136,229,0.3);
+}
+textarea{
+    resize: none;
+}
+button{
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(90deg, #2e7031,#1b5e20);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3;
+    
+}
+button:hover{
+    background: linear-gradient(90deg, #2e7031, #1b5e);
+    transform: scale(1.03);
+}
+footer{
+    text-align: center;
+    padding: 15px;
+    margin-top: 50px;
+    background: #1E88E5;
+    color: white;
+    font-size: 16px;
+}
